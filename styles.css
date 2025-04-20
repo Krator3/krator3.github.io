@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Черный фон */
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0; /* Убираем отступы по краям */
+}
+
+header {
+    background: #000;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #00ff00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00cc00;
+}
+
+h2 {
+    color: #00ff00;
+    text-align: center; /* Центрируем заголовки */
+    font-weight: bold; /* Выделяем заголовки жирным шрифтом */
+}
+
+.block, .card {
+    background: #333;
+    border-radius: 10px; /* Закругление уголков */
+    padding: 15px;
+    margin: 20px;
+    cursor: pointer; /* Указывает, что элемент кликабельный */
+    transition: background 0.3s; /* Плавный переход фона */
+    text-decoration: none; /* Убираем подчеркивание у текста */
+    color: #ffffff; /* Устанавливаем цвет текста */
+    display: block; /* Делаем блоки блочными элементами */
+}
+
+.block:hover, .card:hover {
+    background: #444; /* Изменение фона при наведении */
+}
+
+.card h3, .block h3 {
+    margin: 0;
+}
+
+.main {
+    background: #333;
+    border-radius: 10px; /* Закругление уголков */
+    padding: 15px;
+    margin: 20px;
+    color: #ffffff; /* Устанавливаем цвет текста */
+    display: block; /* Делаем блоки блочными элементами */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #000;
+    color: #ffffff; /* Цвет текста в подвале */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команда split</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Linux = Свобода!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="distributions.html">Дистрибутивы</a></li>
+                <li><a href="commands.html">Команды</a></li>
+                <li><a href="articles.html">Статьи</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="main">
+                <h2>Команда split</h2>
+                <p>Многие из нас сталкиваются с проблемой отправки больших файлов, например, через Telegram из-за ограничений по размеру. Для того чтобы обойти это, можно воспользоваться встроенной в Linux программой под названием split:</p>
+                <code>split -b 2GB /path/to/file part_</code>
+
+                <p>Данная команда разделит указанный файл (<code>/path/to/file</code>) на части (<code>part_</code>) по 2Гб, которые смогут загрузиться в Telegram.</p>
+
+                <p>Помимо разделения файлов по размеру (<code>-b</code>) существует разделение по строкам (<code>-l</code>), а также по равным частям (<code>-n</code>). Узнать о всех возможностях рассматриваемой программы можно по команде <code>split --help</code>.</p>
+
+                <p>Чтобы собрать «пазл» воедино, выполните команду ниже:</p>
+                <code>cat part_* &gt; filename</code>
+
+                <p>Единицами измерения являются K, M, G, T, P, E, Z, Y, R, Q (степени 1024) или KB, MB, ... (степени 1000). Можно использовать двоичные префиксы: KiB=K, MiB=M и так далее. Без букв(ы) число измеряется в байтах.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MIT license</p>
+    </footer>
+</body>
+</html>

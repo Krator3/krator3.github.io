@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команда dd</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Linux = Свобода!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="distributions.html">Дистрибутивы</a></li>
+                <li><a href="commands.html">Команды</a></li>
+                <li><a href="articles.html">Статьи</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="main">
+                <h2>Команда dd</h2>
+                <p>Чтобы создать загрузочную флешку, выполните следующую команду:<br><code>su - -c "dd if=/path/to/iso of=/dev/sdX bs=4M status=progress oflag=sync"</code><br>Где <code>/path/to/iso</code> - путь до нужного .iso образа, а <code>/dev/sdX</code> — нужное устройство (не обязательно с таким же именованием). Узнать название нужного носителя можно при помощи команды <code>lsblk</code><br>Прежде чем выполнять команду, внимательно проверьте все, что вы ввели! Иначе вы рискуете стереть все данные с не того носителя!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MIT license</p>
+    </footer>
+</body>
+</html>
