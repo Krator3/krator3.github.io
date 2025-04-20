@@ -1,2 +1,3 @@
-# krator3.github.io
-Мой тестовый сайт про Linux
+# Тестовый сайт на GitHub Pages
+Мой тестовый сайт про Linux:
+krator3.github.io
